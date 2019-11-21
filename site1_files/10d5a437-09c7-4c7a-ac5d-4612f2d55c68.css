@@ -1,0 +1,106 @@
+div#footerOverlayDiv {
+    height: 40px;
+    width: 100%;
+    background-color: #696969;
+    border: 1px solid #e4e4e4;
+    position: fixed;
+    bottom: -120px;
+    border-radius: 2px;
+    box-shadow: rgba(0;
+    0 0 0.35) -1px 0px 1px -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+    text-align: center;
+    z-index: 2147483647;
+}
+div#footerOverlayDiv.smaller {
+    height: 45px;
+}
+div#closeButton {
+    color: rgba(0, 0, 0, 0.75);
+    padding: 12px 20px;
+    background-color: #696969;
+    border: 0px solid rgb(228, 228, 228);
+    position: absolute;
+    top: 0;
+    right: 4px;
+    border-radius: 2px 2px 0px 0px;
+    text-align: center;
+    z-index: 999999;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 15px;
+}
+div#centerLine {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    width: 94%;
+    height: 1px;
+    display: none;
+}
+.singleLinkDiv {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    text-align: center;
+    height: 45px;
+    vertical-align: top;
+    padding: 0px 10px;
+}
+.singleLinkDiv a {
+    text-decoration: none;
+}
+span.footerLink {
+    margin: 5px 0px 7px;
+    padding: 8px 0px;
+    position: relative;
+    font-size: 13px;
+    cursor: pointer;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    width: auto;
+    line-height: 15px;
+}
+@media (max-width:480px) {
+    div#footerOverlayDiv {
+        height: 85px;
+    }
+    div#linksContainer {
+        margin: auto;
+        max-width: 440px;
+    }
+    div#closeButton {
+        color: rgba(0, 0, 0, 0.75);
+        padding: 4px 12px;
+        background-color: rgb(247, 247, 247);
+        border: 1px solid rgb(228, 228, 228);
+        position: absolute;
+        top: -30px;
+        right: 4px;
+        border-radius: 2px 2px 0px 0px;
+        text-align: center;
+        z-index: 999999;
+        cursor: pointer;
+    }
+    .singleLinkDiv {
+        display: inline-block;
+        position: relative;
+        width: auto;
+        text-align: center;
+        height: 45px;
+        vertical-align: top;
+        padding: 0px 15px;
+    }
+    div#centerLine {
+        display: block;
+    }
+    div#footerOverlayDiv.smaller #centerLine {
+        display: none;
+    }
+}
