@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחשבון הבשר</title>
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <script>
+        let adultmeat = 0.45;
+        let kidsmeat = 0.3;
+        let meatamount = "";
+        function getPrice() {
+            let kids = document.getElementById("kids").value;
+            let adults = document.getElementById("adults").value;
+            if (kids == 0 && adults == 0) {
+                document.getElementById("mankey").innerHTML = "";
+            }
+            else {
+                meatamount = (adults * adultmeat) + (kids * kidsmeat);
+                document.getElementById("mankey").innerHTML = " לכמות הנפשות הזו, המשקל הרצוי בקילו הוא "+meatamount.toFixed(2);
+                console.log(adults + " " + kids)
+            }
+        }
+        function getMeat() {
+            let kids = document.getElementById("kids").value;
+            let adults = document.getElementById("adults").value;
+            if(adults + kids == 0)
+             meat = "מחשבון הבשר צריך לפחות אדם אחד על מנת לחשב"
+            else if (adults > kids)
+                meat = "מבוגרים אוהבים בשר איכותי לכן סוג הבשר שאנחנו ממליצים עליו הוא סטייק"
+            else if (adults < kids && adults > 0)
+                meat = "ילדים אוהבים מגוון לכן אנו ממליצים לערבב בין סוגי הבשרים"
+                else if (kids==0 && adults > 0)
+                meat= "ערב מבוגרים לכן אנו ממליצים לכם לקנות  בשר משובח יותר כמו פיקניה ופורטראהוס"
+            else if(adults == 0 && kids > 0)
+                meat = " אסור לך להדליק מנגל ילד טוס מהמחשבון בשר שלי יא חתיכת שמן מזדיין"
+            else
+                meat = "לפי איזון הנפשות סוג הבשר שאנחנו ממליצים עליו הוא פרגיות"
+               document.getElementById("monkey").innerHTML = meat;
+            }
+    </script>
+</head>
+<body dir="rtl" style="font-family: calibri;">
+    <nav>
+        <a href="index.html" class="right1">דף הבית</a>
+        <a href="meat.html" class="right1">בשרים</a>
+        <a href="spices.html" class="right1">תבלינים</a>
+        <a href="wood.html" class="right1">עצים להסקה</a>
+        <a href="smoke.html" class="right1">מעשנות</a>
+        <a href="mangal.html" class="right1">מנגלים</a>
+        <a href="contact.html" class="left1">צור קשר</a>
+        <a href="calc.html" class="left1">מחשבון הבשר</a>
+    </nav>
+    <div id="logo"><img id="logoImg" src="logo.png" alt="logo" width="230"></div>
+    <section id="main">
+        <center>
+            <h1>מחשבון הבשר הגדול!</h1>
+            <h1>כמות מבוגרים:</h1>
+            <input style="font-size: 22px;" min="0" type="number" id="adults" />
+            <h1>כמות ילדים:</h1>
+            <input style="font-size: 22px;" min="0" type="number" id="kids" />
+            <br />
+            <br>
+            <button id="kop" onclick="getPrice(), getMeat()">hashev</button>
+            <p id="mankey"></p>
+            <p id="monkey"></p>
+</center>
+        
+    </section>
+</body>
+</html>

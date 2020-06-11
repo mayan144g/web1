@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <title>Document</title>
+    <title>Document</title>
+</head>
+<body dir="rtl">
+    <nav>
+        <a href="index.html" class="right1">דף הבית</a>
+        <a href="meat.html" class="right1">בשרים</a>
+        <a href="spices.html" class="right1">תבלינים</a>
+        <a href="wood.html" class="right1">עצים להסקה</a>
+        <a href="smoke.html" class="right1">מעשנות</a>
+        <a href="mangal.html" class="right1">מנגלים</a>
+        <a href="contact.html" class="left1">צור קשר</a>
+        <a href="calc.html" class="left1">מחשבון הבשר</a>
+    </nav>
+    <div id="logo"><img id="logoImg" src="logo.png" alt="logo" width="230"></div>
+    <section id="main">
+        <table class="store2 storeMangal">
+            <tr>
+                <td>
+                    <div class="card">
+                        <img src="mangal/IMG_3610.jpg" alt="מנגל פחמים - בסיסי" style="width:100%">
+                        <h1 >מנגל פחמים - בסיסי</h1>
+                        <p class="price">199 ש"ח</p>
+                        <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="199" data-name="מנגל פחמים - בסיסי" data-img="mangal/IMG_3610.jpg">הוסף לסל</a>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img src="mangal/midleGaz.gif" alt="מנגל גז - בינוני" style="width:100%">
+                        <h1>מנגל גז - בינוני</h1>
+                        <p class="price">1499 ש"ח </p>
+                        <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="1499" data-name="ממנגל גז - בינוני" data-img="mangal/midleGaz.gif">הוסף לסל</a>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img src="mangal/primumGaz.jpg" alt="ממנגל גז - משודרג" style="width:100%">
+                        <h1>ממנגל גז - משודרג</h1>
+                        <p class="price">1999 ש"ח</p>
+                        <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="1999" data-name="ממנגל גז - משודרג" data-img="mangal/primumGaz.jpg">הוסף לסל</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card">
+                        <img src="mangal/primumRegular.jpg" alt="מנגל  פחמים - פרימיום" style="width:100%">
+                        <h1>מנגל  פחמים - פרימיום</h1>
+                        <p class="price">1100 ש"ח</p>
+                        <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="1100" data-name="מנגל  פחמים - פרימיום" data-img="mangal/primumRegular.jpg">הוסף לסל</a>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img src="mangal/ThebestGaz.jpg" alt="מנגל גז - פרימיום" style="width:100%">
+                        <h1>מנגל גז - פרימיום</h1>
+                        <p class="price">3999 ש"ח</p>
+                        <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="3999" data-name="מנגל גז - פרימיום" data-img="mangal/ThebestGaz.jpg">הוסף לסל</a>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img src="mangal/regularGaz.jpg" alt="מנגל גז - בסיסי" style="width:100%">
+                        <h1>מנגל גז - בסיסי</h1>
+                        <p class="price">999 ש"ח</p>
+                        <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="999" data-name="מנגל גז - בסיסי" data-img="mangal/regularGaz.jpg">הוסף לסל</a>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+        <div id="cartHTML"></div>
+        <div class="cd-cart cd-cart--empty js-cd-cart">
+            <a href="#0" class="cd-cart__trigger text-replace">
+                Cart
+                <ul class="cd-cart__count">
+                    <!-- cart items count -->
+                    <li>0</li>
+                    <li>0</li>
+                </ul> <!-- .cd-cart__count -->
+            </a>
+
+            <div class="cd-cart__content">
+                <div class="cd-cart__layout">
+                    <header class="cd-cart__header">
+                        <h2>Cart</h2>
+                        <span class="cd-cart__undo">המוצר נמחק. <a href="#0">בטל פעולה</a></span>
+                    </header>
+
+                    <div class="cd-cart__body">
+                        <ul>
+                            <!-- products added to the cart will be inserted here using JavaScript -->
+                        </ul>
+                    </div>
+
+                    <footer class="cd-cart__footer">
+                        <a href="submit.html" class="cd-cart__checkout">
+                            <em>
+                                המשך לקנייה - ₪<span>0</span>
+                                <svg class="icon icon--sm" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12" /><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 " /></g>
+                                </svg>
+                            </em>
+                        </a>
+                    </footer>
+                </div>
+            </div> <!-- .cd-cart__content -->
+        </div> <!-- cd-cart -->
+        </div>
+        <script>
+        if (sessionStorage.getItem('cartHTML') != null) {
+            document.getElementById('cartHTML').innerHTML = sessionStorage.getItem('cartHTML');
+        }
+        </script>
+        <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+        <script src="assets/js/main.js"></script>
+    </section>
+</body>
+</html>
